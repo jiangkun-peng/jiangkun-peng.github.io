@@ -142,7 +142,7 @@ section, footer, header, aside{
  <div style="position:absolute">
  <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tj&skin=sogou" frameborder="0" width="500" height="70" allowtransparency="true"></iframe> 
  </div><div id="time" style="position: absolute; left: 1024px; top: 26px;"></div>
-<div style="position: absolute; left: 618px; top: 124px;"><img id=obj src ="pic/coffee_break.jpg" width=600 height=550 border =0></div>
+<div style="position: absolute; left: 618px; top: 124px;"><img id=obj src ="pic/dz323.jpg" width=600 height=550 border =0></div>
 
 </td>
 </tr>
@@ -229,9 +229,9 @@ var curIndex=0;
 //时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
 var timeInterval=6000;
 var arr=new Array();
-arr[0]="pic/coffee_break.jpg";
-arr[1]="pic/seminar.jpg";
-arr[2]="pic/training.jpg";
+arr[0]="pic/dz323.jpg";
+arr[1]="pic/dz324.jpg";
+arr[2]="pic/dz325.jpg";
 
 setInterval(changeImg,timeInterval);
 function changeImg()
@@ -247,6 +247,9 @@ curIndex+=1;
 }
 obj.src=arr[curIndex];
 }
+</script>
+<script language="JavaScript">
+setTimeout(function(){location.reload()},3600000); //指定10分钟刷新一次
 </script>
 
 </html>
