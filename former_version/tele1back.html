@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>MARI</title> 
+
+<style>
+
+li{
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;}
+ul{width:400px;
+padding:10px;
+}
+
+
+
+</style>
+<style>
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg.jpg') #dbe4e6;
+	overflow:hidden;
+}
+
+body{
+	font:15px/1.3 Arial, sans-serif;
+	color: #4f4f4f;
+	z-index:1;
+}
+
+a, a:visited {
+	outline:none;
+	color:#389dc1;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header, aside{
+	display: block;
+}
+
+
+/*-------------------------
+	The clocks
+--------------------------*/
+
+
+#clock{
+	width:350px;
+	padding:0px;
+	margin:0px auto 5px;
+	position:relative;
+}
+
+#clock:after{
+	content:'';
+	position:absolute;
+	width:100px;
+	height:20px;
+	border-radius:100%;
+	left:50%;
+	margin-left:-200px;
+	bottom:2px;
+	z-index:-1;
+}
+
+
+#clock .display{
+	text-align:center;
+	padding: 40px 20px 20px;
+	border-radius:1px;
+	position:relative;
+	height: 30px;
+}
+
+
+/*-------------------------
+	Light color theme
+--------------------------*/
+
+
+#clock.light{
+	background-color:#f3f3f3;
+	color:#272e38;
+}
+
+#clock.light:after{
+	box-shadow:0 0px 0px rgba(0,0,0,0.15);
+}
+
+#clock.light .digits div span{
+	background-color:#272e38;
+	border-color:#272e38;	
+}
+
+#clock.light .digits div.dots:before,
+#clock.light .digits div.dots:after{
+	background-color:#272e38;
+}
+
+#clock.light .alarm{
+	background:url('../img/alarm_light.jpg');
+}
+
+#clock.light .display{
+	background-color:#dbe4e6;
+	box-shadow:0 0px 0px rgba(0,0,0,0.08) inset, 0 0px 0px #fafafa;
+}
+
+
+</style>
+</head>
+<body>
+<!-- 1280*720 -->
+<table style="background-image:url(images/background.jpg)" cellspacing="15px" width="1280px" height="720px" border="0" >
+
+<tr>
+<td width=500px height='80px'>
+<div style="position: absolute; top: 28px;" ><img src="images/MARI.svg"  width="600px" height="40px"><br></div>            
+</td>
+
+<td rowspan=3 align="justify" style="vertical-align:top",width=700px>
+
+</td>
+</tr>
+
+<tr>
+<td height=220px style="width:500px;vertical-align:top">
+<div style="line-height:30px;border-radius:3px;background-color:rgba(19,74,178,0.3);color:rgb(0,0,0)" >
+<b>&nbsp;&nbsp;通知公告 Upcoming Events</b></div>
+<table width=500px cellspacing="15px" >
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,51,255,0.7)"><b>05</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2019-11</b></div></td><td><span style="color:black">&nbsp;[Seminar]利用全球网格作物模型评估农业风险</span></td></tr>
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,51,255,0.7)"><b>28</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2019-10</b></div></td><td><span style="color:black">&nbsp;昆山杜克大学Patrick S. Ward教授访问MARI</span></td></tr>
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,51,255,0.7)"><b>28</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2019-10</b></div></td><td><span style="color:black">&nbsp;南京农业大学田旭教授访问MARI</span></td></tr>
+</table></div></td>
+
+</tr>
+<tr>
+<td width=500px style="height:200px;;vertical-align:top;">
+<div style="line-height:30px;border-radius:3px;color:black;background-color:rgba(19,74,178,0.3)"><b> &nbsp;&nbsp;MARI新闻 MARI News</b></div>
+<div style="border-radius:3px"></div>
+
+<table width=500px cellspacing="15px" >
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,51,255,0.7)"><b>21</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2019-10</b></div></td>
+<td><span style="color:black">&nbsp;徐保东老师赴上海参加中国地理信息科学理论与方法学术年会</span></td></tr>
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,51,255,0.7)"><b>15</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2019-10</b></div></td><td><span style="color:black">&nbsp;【特别关注】走在农业大数据的调研路上 ——学校研究生暑期大调研与实践育人工作侧记</span></td></tr>
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,51,255,0.7)"><b>13</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2019-10</b></div></td><td><span style="color:black">&nbsp;徐保东老师赴成都参加2019年智慧农业科技创新研讨会暨示范观摩会</span></td></tr>
+</table>
+</td>
+</tr>
+</table>
+<a href="https://info.flagcounter.com/wxrF"><img src="https://s05.flagcounter.com/mini/wxrF/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+</body>
+
+
+
+<script>
+    window.onload=function(){
+        getTime();
+    }
+  
+    function getTime(){
+        var date = new Date();
+        var hours =formatTime(date.getHours());
+        var minutes = formatTime(date.getMinutes());
+        var seconds = formatTime(date.getSeconds());
+        var $time = document.getElementById('time');
+        $time.innerHTML=hours +"<img src='images/hm.png'  width='9' height='45'/>"+ minutes+"<img   src='images/ms.png' width='9' height='45'/>"+ seconds;
+        
+        setTimeout("getTime()",500);
+
+    }
+    function formatTime(i){
+        if(i<10&&i==1){
+            i=  "<img src='images/0.png' width='20' height='45'/>"+"<img src='images/1.png' width='20' height='45'/>";
+        }else if(i<10&&i!=1){
+            i= "<img src='images/0.png' width='20' height='45'/>" + "<img src='images/"+i+".png' width='20' height='45'/>";
+        }else{
+           
+            var j= i.toString().charAt(0);
+            var z =i.toString().charAt(1);
+           if(j<10 && z<10&&j!=1&&z!=1){
+               i = "<img src='images/"+j+".png' width='20' height='45'/>" + "<img src='images/"+z+".png' width='20' height='45'/>";
+            }else if(j<10 && z<10&&j==1&&z!=1){
+              
+               i = "<img src='images/1.png' width='20' height='45'/>" + "<img src='images/"+z+".png' width='20' height='45'/>";
+
+           }else if(j<10 && z<10&&z==1&&j!=1){
+                   i =  "<img src='images/"+j+".png' width='20' height='45'/>"+"<img src='images/1.png' width='20' height='45'/>";
+
+           }else if(j<10 && z<10&&(j==1&&z==1)){
+               i="<img src='images/1.png' width='20' height='45'/>"+"<img src='images/1.png' width='20' height='45'/>";
+           }
+        }
+
+        return i;
+    }
+  
+</script>
+<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+var timeInterval=6000;
+var arr=new Array();
+arr[0]="pic/dz323.jpg";
+arr[1]="pic/dz324.jpg";
+arr[2]="pic/dz325.jpg";
+
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+var obj=document.getElementById("obj");
+if (curIndex==arr.length-1) 
+{
+curIndex=0;
+}
+else
+{
+curIndex+=1;
+}
+obj.src=arr[curIndex];
+}
+</script>
+<script language="JavaScript">
+setTimeout(function(){location.reload()},3600000); //指定10分钟刷新一次
+</script>
+
+</html>
+
