@@ -174,9 +174,6 @@ padding:10px;
 
 </body>
 
-
-<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-
 <script>
     window.onload=function(){
         getTime();
@@ -246,28 +243,11 @@ obj.src=arr[curIndex];
 </script>
 
 <script language =javascript >
-function check_connect()
-{
-    console.log($)
-    var testURL = "https://jiangkun-peng.github.io/pic/test1.png"
-    var waitTime = 1000  // recheck every 15 seconds
-
-    $.ajax({
-      type: 'GET',
-      url: testURL,
-      timeout: 5000,  // allow this many milisecs for network connect to succeed
-      success: function(data) {
-        // we have a connection, reload page then try again after waitTime
-        location.reload();  // reloads entire page
-        window.setTimeout(check_connect, waitTime)  // try again after waitTime miliseconds
-      },
-      error: function(XMLHttpRequest, textStatus, errorThrown) {
-        // no connection, try again after waitTime
-        window.setTimeout(check_connect, waitTime) 
-      }
-      });
-window.setInterval(function(){check_connect()},1000);
-}
+setInterval(function() {
+    if (navigator.onLine) {
+        location.reload();
+    }
+}, 1000); 
 </script>
 
 
