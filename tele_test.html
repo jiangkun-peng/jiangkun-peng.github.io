@@ -175,6 +175,7 @@ padding:10px;
 </body>
 
 
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 
 <script>
     window.onload=function(){
@@ -246,7 +247,8 @@ obj.src=arr[curIndex];
 
 <script>
 function check_connect()
-
+{
+    console.log($)
     var testURL = "pic/test1.png"
     var waitTime = 1000  // recheck every 15 seconds
 
@@ -264,6 +266,7 @@ function check_connect()
         window.setTimeout(check_connect, waitTime) 
       }
       });
+}
 </script>
 
 
