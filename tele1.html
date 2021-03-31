@@ -174,8 +174,6 @@ padding:10px;
 
 </body>
 
-
-
 <script>
     window.onload=function(){
         getTime();
@@ -228,13 +226,6 @@ arr[0]="pic/coffee_breaks.png";
 arr[1]="pic/quiet.png";
 arr[2]="pic/hb.gif";
 
-
-
-
-
-
-
-
 setInterval(changeImg,timeInterval);
 function changeImg()
 {
@@ -250,6 +241,15 @@ curIndex+=1;
 obj.src=arr[curIndex];
 }
 </script>
+
+<script language =javascript >
+setInterval(function() {
+    if (navigator.onLine) {
+        location.reload();
+    }
+}, 7200000); 
+</script>
+
 
 </html>
 
