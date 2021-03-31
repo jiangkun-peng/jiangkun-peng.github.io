@@ -249,7 +249,7 @@ obj.src=arr[curIndex];
 function check_connect()
 {
     console.log($)
-    var testURL = "pic/test1.png"
+    var testURL = "/pic/test1.png"
     var waitTime = 1000  // recheck every 15 seconds
 
     $.ajax({
@@ -266,7 +266,7 @@ function check_connect()
         window.setTimeout(check_connect, waitTime) 
       }
       });
-setInterval(check_connect,waitTime);
+window.setInterval(function(){check_connect()},1000);
 }
 </script>
 
