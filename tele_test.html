@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>MARI</title> 
+
+<style>
+
+li{
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;}
+ul{width:400px;
+padding:10px;
+}
+
+
+
+</style>
+<style>
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+
+
+
+/*-------------------------
+	The clocks
+--------------------------*/
+
+
+#clock{
+	width:350px;
+	padding:0px;
+	margin:0px auto 5px;
+	position:relative;
+}
+
+#clock:after{
+	content:'';
+	position:absolute;
+	width:100px;
+	height:20px;
+	border-radius:100%;
+	left:50%;
+	margin-left:-200px;
+	bottom:2px;
+	z-index:-1;
+}
+
+
+#clock .display{
+	text-align:center;
+	padding: 40px 20px 20px;
+	border-radius:1px;
+	position:relative;
+	height: 30px;
+}
+
+
+/*-------------------------
+	Light color theme
+--------------------------*/
+
+
+#clock.light{
+	background-color:#f3f3f3;
+	color:#272e38;
+}
+
+#clock.light:after{
+	box-shadow:0 0px 0px rgba(0,0,0,0.15);
+}
+
+#clock.light .digits div span{
+	background-color:#272e38;
+	border-color:#272e38;	
+}
+
+#clock.light .digits div.dots:before,
+#clock.light .digits div.dots:after{
+	background-color:#272e38;
+}
+
+#clock.light .alarm{
+	background:url('../img/alarm_light.jpg');
+}
+
+#clock.light .display{
+	background-color:#dbe4e6;
+	box-shadow:0 0px 0px rgba(0,0,0,0.08) inset, 0 0px 0px #fafafa;
+}
+
+
+</style>
+</head>
+<body>
+<!-- 1280*720 -->
+<table style="background-image:url('images/background.jpg')" cellspacing="15px" width="1280px" height="720px" border="0" >
+
+<tr>
+<td width=600px height='80px'>
+<div style="position: absolute; top: 35px; left: 36px;" ><img src="images/MARI.png"  width="580px" height="42px"><br></div>            
+</td>
+
+<td rowspan=3 align="justify" style="vertical-align:top",width=700px>
+ <div style="position: absolute; width: 404px; height: 62px; top: 21px; left: 780px;">
+ <iframe style="transform:scale(0.75)" scrolling="no" src="https://tianqiapi.com/api.php?style=tj&skin=sogou" frameborder="0" width="500" height="80" allowtransparency="true"></iframe> 
+ </div><div id="time" style="position: absolute; left: 655px; top: 33px;"></div>
+<div style="position: absolute; left: 651px; top: 109px; width: 582px"><img id=obj src ="pic/coffee_breaks.png" width=590px height=570px border =0px></div>
+
+</td>
+</tr>
+
+<tr>
+<td height=220px style="width:600px;vertical-align:top" >
+<div style="line-height:30px;border-radius:3px;background-color:rgba(19,74,178,0.3);color:rgb(0,0,0);width:580px;float:right;font-size:18px" >
+<b>&nbsp;&nbsp;通知公告 Upcoming Events</b></div>
+<table width=600px cellspacing="20px" >
+
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,64,152,1)"><b>23</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2021-03</b></div></td>
+<td><span style="color:black;font-size:18px">&nbsp;[学术沙龙]只是为了测试</span></td></tr>
+
+
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,64,152,1)"><b>25</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2021-01</b></div></td>
+<td><span style="color:black;font-size:18px">&nbsp;2021智慧农业产学研生态峰会之智慧农业创意大赛指南</span></td></tr>
+
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,64,152,1)"><b>11</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2021-01</b></div></td>
+<td><span style="color:black;font-size:18px">&nbsp;关于做好研究生自习室冬春常态化疫情防控的通知</span></td></tr>
+
+
+
+
+
+
+
+
+</table></div></td>
+
+</tr>
+<tr>
+<td width=600px style="height:200px;;vertical-align:top;">
+<div style="line-height:30px;border-radius:3px;color:black;background-color:rgba(19,74,178,0.3);width:580px;float:right;font-size:18px"><b> &nbsp;&nbsp;MARI新闻 MARI News</b></div>
+<div style="border-radius:3px"></div>
+
+<table width=600px cellspacing="20px" >
+
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,64,152,1)"><b>26</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2021-03</b></div></td><td><span style="color:black;font-size:18px">&nbsp;第一届智慧农业创意大赛赛前培训在线举办</span></td></tr>
+
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,64,152,1)"><b>13</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2021-03</b></div></td><td><span style="color:black;font-size:18px">&nbsp;MARI农业大数据与智慧农业团队提出遥感数据和统计数据协同的农作物空间分布制图新方法</span></td></tr>
+
+
+<tr><td  margin=0px height="60px" width="80px" ><div width=80px style="line-height:35px;text-align:center;font:'Times New Roman', Times, serif;font-size:24px;color:white;background-color:rgba(0,64,152,1)"><b>26</b></div><div width=80px style="line-height:25px;text-align:center;font:'Times New Roman', Times, serif;font-size:15px;color:white;background-color:rgba(153,153,153,0.7)"><b>2021-01</b></div></td>
+<td><span style="color:black;font-size:18px">&nbsp;熊航与凌霖参加中国仿真学会农业建模与仿真专委会年度工作会议</span></td></tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+
+</body>
+
+
+
+<script>
+    window.onload=function(){
+        getTime();
+    }
+  
+    function getTime(){
+        var date = new Date();
+        var hours =formatTime(date.getHours());
+        var minutes = formatTime(date.getMinutes());
+        var seconds = formatTime(date.getSeconds());
+        var $time = document.getElementById('time');
+        $time.innerHTML=hours +"<img src='images/hm.png'  width='9' height='45'/>"+ minutes+"<img   src='images/ms.png' width='9' height='45'/>"+ seconds;
+        
+        setTimeout("getTime()",500);
+
+    }
+    function formatTime(i){
+        if(i<10&&i==1){
+            i=  "<img src='images/0.png' width='20' height='45'/>"+"<img src='images/1.png' width='20' height='45'/>";
+        }else if(i<10&&i!=1){
+            i= "<img src='images/0.png' width='20' height='45'/>" + "<img src='images/"+i+".png' width='20' height='45'/>";
+        }else{
+           
+            var j= i.toString().charAt(0);
+            var z =i.toString().charAt(1);
+           if(j<10 && z<10&&j!=1&&z!=1){
+               i = "<img src='images/"+j+".png' width='20' height='45'/>" + "<img src='images/"+z+".png' width='20' height='45'/>";
+            }else if(j<10 && z<10&&j==1&&z!=1){
+              
+               i = "<img src='images/1.png' width='20' height='45'/>" + "<img src='images/"+z+".png' width='20' height='45'/>";
+
+           }else if(j<10 && z<10&&z==1&&j!=1){
+                   i =  "<img src='images/"+j+".png' width='20' height='45'/>"+"<img src='images/1.png' width='20' height='45'/>";
+
+           }else if(j<10 && z<10&&(j==1&&z==1)){
+               i="<img src='images/1.png' width='20' height='45'/>"+"<img src='images/1.png' width='20' height='45'/>";
+           }
+        }
+
+        return i;
+    }
+  
+</script>
+<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+var timeInterval=5000;
+var arr=new Array();
+arr[0]="pic/coffee_breaks.png";
+arr[1]="pic/quiet.png";
+arr[2]="pic/hb.gif";
+
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+var obj=document.getElementById("obj");
+if (curIndex==arr.length-1) 
+{
+curIndex=0;
+}
+else
+{
+curIndex+=1;
+}
+obj.src=arr[curIndex];
+}
+</script>
+
+<script>
+function check_connect()
+
+    var testURL = "pic/test1.png"
+    var waitTime = 1000  // recheck every 15 seconds
+
+    $.ajax({
+      type: 'GET',
+      url: testURL,
+      timeout: 5000,  // allow this many milisecs for network connect to succeed
+      success: function(data) {
+        // we have a connection, reload page then try again after waitTime
+        location.reload();  // reloads entire page
+        window.setTimeout(check_connect, waitTime)  // try again after waitTime miliseconds
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+        // no connection, try again after waitTime
+        window.setTimeout(check_connect, waitTime) 
+      }
+      });
+</script>
+
+
+</html>
+
